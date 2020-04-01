@@ -1,0 +1,9 @@
+<ion-content>
+  <app-add-todo></app-add-todo>
+  <ul class="todos">
+    <li *ngFor="let item of todos; let i = index;">
+      {{ item.title }}
+      <span (click)="removeTodo(i)" class="crossButton">x</span>
+    </li>
+  </ul>
+</ion-content>
